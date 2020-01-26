@@ -15,11 +15,11 @@
 # and the PG will write to the console the kind of error and in which line it is
 
 meta:
-	ADDON_NAME = ofxAddonTemplate
-	ADDON_DESCRIPTION = ofxAddonTemplate is amazing!
-	ADDON_AUTHOR = @yournamehere
-	ADDON_TAGS = "addon" "template"
-	ADDON_URL = http://github.com/yournamehere/ofxAddonTemplate
+	ADDON_NAME = ofxSOIL
+	ADDON_DESCRIPTION = ofxSOIL is wrapper of SOIL
+	ADDON_AUTHOR = @desktopgame
+	ADDON_TAGS = "addon"
+	ADDON_URL = http://github.com/desktopgame/ofxSOIL
 
 common:
 	# dependencies with other addons, a list of them separated by spaces 
@@ -29,7 +29,7 @@ common:
 	# include search paths, this will be usually parsed from the file system
 	# but if the addon or addon libraries need special search paths they can be
 	# specified here separated by spaces or one per line using +=
-	# ADDON_INCLUDES =
+	ADDON_INCLUDES += libs/SOIL/includes
 	
 	# any special flag that should be passed to the compiler when using this
 	# addon
@@ -50,7 +50,7 @@ common:
 	# ADDON_SOURCES =
 	
 	# source files that will be included as C files explicitly
-	# ADDON_C_SOURCES = 
+	ADDON_C_SOURCES += libs/SOIL/src
 	
 	# source files that will be included as header files explicitly
 	# ADDON_HEADER_SOURCES = 
@@ -91,6 +91,7 @@ vs:
 	# After compiling copy the following dynamic libraries to the executable directory
 	# only windows visual studio
 	# ADDON_DLLS_TO_COPY = 
+	ADDON_LIBS += libs/SOIL/lib/vs/soil.lib
 	
 linuxarmv6l:
 linuxarmv7l:
