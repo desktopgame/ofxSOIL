@@ -1,35 +1,33 @@
-ofxSOIL
-=====================================
+# ofxSOIL
 
+## Introduction
 
-Introduction
-------------
 ofxSOIL is wrapper of SOIL
 
-License
--------
+## License
+
 MIT License
 
-Installation
-------------
+## Installation
+
 folder into the `openFrameworks/addons/` folder.
 
-Dependencies
-------------
+## Dependencies
+
 have no dependencies.
 
-Compatibility
-------------
-* of_v0.10.1_vs2017_release
-* Windows10
+## Compatibility
 
-Known issues
-------------
+- of_v0.10.1_vs2017_release
+- Windows10
+- macOS
+
+## Known issues
+
 known problem is none.
 
-Version history
-------------
+## Version history
 
 ### Version 0.1 (2020/1/26):
-first release
 
+first release
