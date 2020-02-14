@@ -77,4 +77,10 @@ void saveImage(const std::string & file, SaveMode mode, int width, int height, i
 		throw IOError("failed SOIL_save_screenshot()");
 	}
 }
+void deleteImage(Image & image) {
+	if (image.data != nullptr) {
+		SOIL_free_image_data(image.data);
+		image.data = nullptr;
+	}
+}
 }

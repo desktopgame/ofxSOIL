@@ -125,5 +125,10 @@ unsigned int loadOGLTextureFromMemory(unsigned char* mem, int bytes, LoadMode mo
  * @param data
  */
 void saveImage(const std::string& file, SaveMode mode, int width, int height, int channels, const unsigned char* data);
+
+/**
+ * @param image
+ */
+void deleteImage(Image& image);
 }
 #endif
